@@ -15,7 +15,7 @@ __pycache__/
 venv/
 env/
 .venv/
-build/
+build/*
 dist/
 *.egg-info/
 .python-version # for pyenv
