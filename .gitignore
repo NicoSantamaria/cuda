@@ -1,0 +1,33 @@
+# Byte-code files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.pyw
+*.pyz.*
+
+# IDE and editor files
+.idea/  # For PyCharm
+.vscode/ # For VS Code
+*.swp    # For Vim
+
+# Virtual environments
+venv/
+env/
+.venv/
+build/
+dist/
+*.egg-info/
+.python-version # for pyenv
+
+# Testing and debugging
+.pytest_cache/
+nosetests.xml
+coverage/
+*.cover
+*.log
+
+# Sensitive/Configuration files
+.env
+.flaskenv
+instance/
