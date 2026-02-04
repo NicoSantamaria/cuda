@@ -1,5 +1,5 @@
 from . import executor
 
-def update(repository_url, branch_name):
-    executor.execute('!git fetch')
-    executor.execute('!git pull')
+def update(branch_name):
+    executor.execute(f"!git fetch origin {branch_name}")
+    executor.execute(f"!git pull origin {branch_name}")
