@@ -1,12 +1,12 @@
 from IPython import get_ipython
-from dataclasses import dataclass
-
+from dataclasses import dataclass, field
+from typing import Any
 
 @dataclass
 class CellExecutor:
-    ipyhon: any = get_ipython()
+    ipython: Any = field(default_factory=get_ipython)
     
-    def execute(self, code):        
+    def execute(self, code: str):
         result = self.ipython.run_cell(code)
         if result.error_in_exec:
             raise RuntimeError(result.error_in_exec)
